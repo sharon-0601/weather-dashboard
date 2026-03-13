@@ -1,127 +1,8 @@
-<!--&lt;!&ndash;&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<html>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<head>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <title>Weather Dashboard</title>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</head>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<body>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <h1>Weather Dashboard</h1>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <table border="1">&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        <tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <th>City</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <th>Temperature (°C)</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <th>Description</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        </tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        {% for data in weather_data %}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        <tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <td>{{ data.city }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <td>{{ data.temperature }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <td>{{ data.description }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        </tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        {% endfor %}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    </table>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</body>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</html>&ndash;&gt;&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<html>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<head>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <title>Weather Dashboard</title>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <style>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        body { font-family: Arial, sans-serif; background: #f0f2f5; text-align: center; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        h1 { color: #333; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        table { margin: 0 auto; border-collapse: collapse; width: 60%; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        th, td { padding: 12px; border: 1px solid #ddd; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        th { background-color: #4CAF50; color: white; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        tr:hover { background-color: #f1f1f1; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    </style>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</head>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<body>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <h1>Weather Dashboard</h1>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <table>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        <tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <th>City</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <th>Temperature (°C)</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <th>Description</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        </tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        {% for data in weather_data %}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        <tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <td>{{ data.city }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <td>{{ data.temperature }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <td>{{ data.description }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        </tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        {% endfor %}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    </table>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</body>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</html>&ndash;&gt;&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<html>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<head>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <title>Weather Dashboard</title>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <style>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        body { font-family: Arial, sans-serif; background: #f0f2f5; text-align: center; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        h1 { color: #333; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        table { margin: 0 auto; border-collapse: collapse; width: 60%; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        th, td { padding: 12px; border: 1px solid #ddd; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        th { background-color: #4CAF50; color: white; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        tr:hover { background-color: #f1f1f1; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        #last-updated { margin-top: 10px; font-style: italic; color: #555; }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    </style>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</head>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;<body>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    <h1>Weather Dashboard</h1>&ndash;&gt;&ndash;&gt;-->
-
-<!--&lt;!&ndash;&lt;!&ndash;    <div id="weather-table">&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        <table>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                <th>City</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                <th>Temperature (°C)</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                <th>Description</th>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            </tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            {% for data in weather_data %}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            <tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                <td>{{ data.city }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                <td>{{ data.temperature }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                <td>{{ data.description }}</td>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            </tr>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            {% endfor %}&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        </table>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    </div>&ndash;&gt;&ndash;&gt;-->
-
-<!--&lt;!&ndash;&lt;!&ndash;    <p id="last-updated">Last updated: <span id="time"></span></p>&ndash;&gt;&ndash;&gt;-->
-
-<!--&lt;!&ndash;&lt;!&ndash;    <script>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        // Update the time every second&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        function updateTime() {&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            let now = new Date();&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            document.getElementById("time").innerText = now.toLocaleTimeString();&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        setInterval(updateTime, 1000);&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        updateTime(); // initial call&ndash;&gt;&ndash;&gt;-->
-
-<!--&lt;!&ndash;&lt;!&ndash;        // Auto-refresh weather table every 60 seconds&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        function refreshWeather() {&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            fetch('/')&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            .then(response => response.text())&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            .then(html => {&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                // Extract only the table from the response&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                let parser = new DOMParser();&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                let doc = parser.parseFromString(html, 'text/html');&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                let newTable = doc.getElementById('weather-table');&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;                document.getElementById('weather-table').innerHTML = newTable.innerHTML;&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;            });&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        }&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;        setInterval(refreshWeather, 60000);&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;    </script>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</body>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</html>&ndash;&gt;&ndash;&gt;-->
-
 <!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
 <!--&lt;!&ndash;<html>&ndash;&gt;-->
 <!--&lt;!&ndash;<head>&ndash;&gt;-->
 <!--&lt;!&ndash;    <title>Weather Dashboard</title>&ndash;&gt;-->
+<!--&lt;!&ndash;    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>&ndash;&gt;-->
 <!--&lt;!&ndash;    <style>&ndash;&gt;-->
 <!--&lt;!&ndash;        body { font-family: Arial, sans-serif; background: #f0f2f5; text-align: center; }&ndash;&gt;-->
 <!--&lt;!&ndash;        h1 { color: #333; }&ndash;&gt;-->
@@ -130,6 +11,7 @@
 <!--&lt;!&ndash;        th { background-color: #4CAF50; color: white; }&ndash;&gt;-->
 <!--&lt;!&ndash;        tr:hover { background-color: #f1f1f1; }&ndash;&gt;-->
 <!--&lt;!&ndash;        #last-updated { margin-top: 10px; font-style: italic; color: #555; }&ndash;&gt;-->
+<!--&lt;!&ndash;        canvas { margin-top: 30px; }&ndash;&gt;-->
 <!--&lt;!&ndash;    </style>&ndash;&gt;-->
 <!--&lt;!&ndash;</head>&ndash;&gt;-->
 <!--&lt;!&ndash;<body>&ndash;&gt;-->
@@ -142,44 +24,94 @@
 <!--&lt;!&ndash;                <th>Temperature (°C)</th>&ndash;&gt;-->
 <!--&lt;!&ndash;                <th>Description</th>&ndash;&gt;-->
 <!--&lt;!&ndash;            </tr>&ndash;&gt;-->
-<!--&lt;!&ndash;            {% for data in weather_data %}&ndash;&gt;-->
-<!--&lt;!&ndash;            <tr>&ndash;&gt;-->
-<!--&lt;!&ndash;                <td>{{ data.city }}</td>&ndash;&gt;-->
-<!--&lt;!&ndash;                <td>{{ data.temperature }}</td>&ndash;&gt;-->
-<!--&lt;!&ndash;                <td>{{ data.description }}</td>&ndash;&gt;-->
-<!--&lt;!&ndash;            </tr>&ndash;&gt;-->
-<!--&lt;!&ndash;            {% endfor %}&ndash;&gt;-->
 <!--&lt;!&ndash;        </table>&ndash;&gt;-->
 <!--&lt;!&ndash;    </div>&ndash;&gt;-->
 
 <!--&lt;!&ndash;    <p id="last-updated">Last updated: <span id="time"></span></p>&ndash;&gt;-->
 
+<!--&lt;!&ndash;    <canvas id="weatherChart" width="800" height="400"></canvas>&ndash;&gt;-->
+
 <!--&lt;!&ndash;    <script>&ndash;&gt;-->
-<!--&lt;!&ndash;        // Update the time every second&ndash;&gt;-->
+<!--&lt;!&ndash;        const table = document.querySelector("#weather-table table");&ndash;&gt;-->
+
 <!--&lt;!&ndash;        function updateTime() {&ndash;&gt;-->
-<!--&lt;!&ndash;            let now = new Date();&ndash;&gt;-->
-<!--&lt;!&ndash;            document.getElementById("time").innerText = now.toLocaleTimeString();&ndash;&gt;-->
+<!--&lt;!&ndash;            document.getElementById("time").innerText = new Date().toLocaleTimeString();&ndash;&gt;-->
 <!--&lt;!&ndash;        }&ndash;&gt;-->
 <!--&lt;!&ndash;        setInterval(updateTime, 1000);&ndash;&gt;-->
-<!--&lt;!&ndash;        updateTime(); // initial call&ndash;&gt;-->
+<!--&lt;!&ndash;        updateTime();&ndash;&gt;-->
 
-<!--&lt;!&ndash;        // Auto-refresh weather table every 60 seconds&ndash;&gt;-->
-<!--&lt;!&ndash;        function refreshWeather() {&ndash;&gt;-->
-<!--&lt;!&ndash;            fetch('/')&ndash;&gt;-->
-<!--&lt;!&ndash;            .then(response => response.text())&ndash;&gt;-->
-<!--&lt;!&ndash;            .then(html => {&ndash;&gt;-->
-<!--&lt;!&ndash;                let parser = new DOMParser();&ndash;&gt;-->
-<!--&lt;!&ndash;                let doc = parser.parseFromString(html, 'text/html');&ndash;&gt;-->
-<!--&lt;!&ndash;                let newTable = doc.getElementById('weather-table');&ndash;&gt;-->
-<!--&lt;!&ndash;                document.getElementById('weather-table').innerHTML = newTable.innerHTML;&ndash;&gt;-->
-<!--&lt;!&ndash;            });&ndash;&gt;-->
+<!--&lt;!&ndash;        let chart;&ndash;&gt;-->
+
+<!--&lt;!&ndash;        function tempColor(temp) {&ndash;&gt;-->
+<!--&lt;!&ndash;            // Color scale: cold (blue) to hot (red)&ndash;&gt;-->
+<!--&lt;!&ndash;            if (temp === "N/A") return 'gray';&ndash;&gt;-->
+<!--&lt;!&ndash;            if (temp <= 0) return '#3498db';        // blue&ndash;&gt;-->
+<!--&lt;!&ndash;            if (temp <= 10) return '#5dade2';       // light blue&ndash;&gt;-->
+<!--&lt;!&ndash;            if (temp <= 20) return '#f1c40f';       // yellow&ndash;&gt;-->
+<!--&lt;!&ndash;            if (temp <= 30) return '#e67e22';       // orange&ndash;&gt;-->
+<!--&lt;!&ndash;            return '#e74c3c';                       // red&ndash;&gt;-->
 <!--&lt;!&ndash;        }&ndash;&gt;-->
-<!--&lt;!&ndash;        setInterval(refreshWeather, 60000); // every 60 seconds&ndash;&gt;-->
+
+<!--&lt;!&ndash;        async function fetchWeather() {&ndash;&gt;-->
+<!--&lt;!&ndash;            const response = await fetch('/weather_data');&ndash;&gt;-->
+<!--&lt;!&ndash;            const data = await response.json();&ndash;&gt;-->
+
+<!--&lt;!&ndash;            // Update table&ndash;&gt;-->
+<!--&lt;!&ndash;            table.innerHTML = `&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <th>City</th>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <th>Temperature (°C)</th>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <th>Description</th>&ndash;&gt;-->
+<!--&lt;!&ndash;                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            `;&ndash;&gt;-->
+<!--&lt;!&ndash;            data.forEach(item => {&ndash;&gt;-->
+<!--&lt;!&ndash;                const row = table.insertRow();&ndash;&gt;-->
+<!--&lt;!&ndash;                row.insertCell(0).innerText = item.city;&ndash;&gt;-->
+
+<!--&lt;!&ndash;                const tempCell = row.insertCell(1);&ndash;&gt;-->
+<!--&lt;!&ndash;                tempCell.innerText = item.temperature;&ndash;&gt;-->
+<!--&lt;!&ndash;                tempCell.style.color = tempColor(item.temperature);&ndash;&gt;-->
+
+<!--&lt;!&ndash;                const descCell = row.insertCell(2);&ndash;&gt;-->
+<!--&lt;!&ndash;                descCell.innerText = item.description;&ndash;&gt;-->
+<!--&lt;!&ndash;            });&ndash;&gt;-->
+
+<!--&lt;!&ndash;            // Update chart&ndash;&gt;-->
+<!--&lt;!&ndash;            const labels = data.map(d => d.city);&ndash;&gt;-->
+<!--&lt;!&ndash;            const temps = data.map(d => d.temperature === "N/A" ? 0 : d.temperature);&ndash;&gt;-->
+<!--&lt;!&ndash;            const colors = data.map(d => tempColor(d.temperature));&ndash;&gt;-->
+
+<!--&lt;!&ndash;            if (!chart) {&ndash;&gt;-->
+<!--&lt;!&ndash;                const ctx = document.getElementById('weatherChart').getContext('2d');&ndash;&gt;-->
+<!--&lt;!&ndash;                chart = new Chart(ctx, {&ndash;&gt;-->
+<!--&lt;!&ndash;                    type: 'bar',&ndash;&gt;-->
+<!--&lt;!&ndash;                    data: {&ndash;&gt;-->
+<!--&lt;!&ndash;                        labels: labels,&ndash;&gt;-->
+<!--&lt;!&ndash;                        datasets: [{&ndash;&gt;-->
+<!--&lt;!&ndash;                            label: 'Temperature (°C)',&ndash;&gt;-->
+<!--&lt;!&ndash;                            data: temps,&ndash;&gt;-->
+<!--&lt;!&ndash;                            backgroundColor: colors&ndash;&gt;-->
+<!--&lt;!&ndash;                        }]&ndash;&gt;-->
+<!--&lt;!&ndash;                    },&ndash;&gt;-->
+<!--&lt;!&ndash;                    options: {&ndash;&gt;-->
+<!--&lt;!&ndash;                        responsive: true,&ndash;&gt;-->
+<!--&lt;!&ndash;                        scales: {&ndash;&gt;-->
+<!--&lt;!&ndash;                            y: { beginAtZero: true }&ndash;&gt;-->
+<!--&lt;!&ndash;                        }&ndash;&gt;-->
+<!--&lt;!&ndash;                    }&ndash;&gt;-->
+<!--&lt;!&ndash;                });&ndash;&gt;-->
+<!--&lt;!&ndash;            } else {&ndash;&gt;-->
+<!--&lt;!&ndash;                chart.data.datasets[0].data = temps;&ndash;&gt;-->
+<!--&lt;!&ndash;                chart.data.datasets[0].backgroundColor = colors;&ndash;&gt;-->
+<!--&lt;!&ndash;                chart.update();&ndash;&gt;-->
+<!--&lt;!&ndash;            }&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--&lt;!&ndash;        fetchWeather(); // initial load&ndash;&gt;-->
+<!--&lt;!&ndash;        setInterval(fetchWeather, 10000); // update every 10 seconds&ndash;&gt;-->
 <!--&lt;!&ndash;    </script>&ndash;&gt;-->
 <!--&lt;!&ndash;</body>&ndash;&gt;-->
 <!--&lt;!&ndash;</html>&ndash;&gt;-->
-
-
 
 <!--<!DOCTYPE html>-->
 <!--<html>-->
@@ -192,7 +124,7 @@
 <!--        table { margin: 0 auto; border-collapse: collapse; width: 80%; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);}-->
 <!--        th, td { padding: 12px; border: 1px solid #ddd; }-->
 <!--        th { background-color: #4CAF50; color: white; }-->
-<!--        tr:hover { background-color: #f1f1f1; }-->
+<!--        tr:hover { opacity: 0.8; }-->
 <!--        #last-updated { margin-top: 10px; font-style: italic; color: #555; }-->
 <!--        canvas { margin-top: 30px; }-->
 <!--    </style>-->
@@ -225,6 +157,15 @@
 
 <!--        let chart;-->
 
+<!--        function rowColor(temp) {-->
+<!--            if (temp === "N/A") return 'lightgray';-->
+<!--            if (temp <= 0) return '#85C1E9';        // dark blue-->
+<!--            if (temp <= 10) return '#AED6F1';       // light blue-->
+<!--            if (temp <= 20) return '#F9E79F';       // yellow-->
+<!--            if (temp <= 30) return '#F5B041';       // orange-->
+<!--            return '#EC7063';                        // red-->
+<!--        }-->
+
 <!--        async function fetchWeather() {-->
 <!--            const response = await fetch('/weather_data');-->
 <!--            const data = await response.json();-->
@@ -239,14 +180,22 @@
 <!--            `;-->
 <!--            data.forEach(item => {-->
 <!--                const row = table.insertRow();-->
-<!--                row.insertCell(0).innerText = item.city;-->
-<!--                row.insertCell(1).innerText = item.temperature;-->
-<!--                row.insertCell(2).innerText = item.description;-->
+<!--                row.style.backgroundColor = rowColor(item.temperature);-->
+
+<!--                const cityCell = row.insertCell(0);-->
+<!--                cityCell.innerText = item.city;-->
+
+<!--                const tempCell = row.insertCell(1);-->
+<!--                tempCell.innerText = item.temperature;-->
+
+<!--                const descCell = row.insertCell(2);-->
+<!--                descCell.innerText = item.description;-->
 <!--            });-->
 
 <!--            // Update chart-->
 <!--            const labels = data.map(d => d.city);-->
 <!--            const temps = data.map(d => d.temperature === "N/A" ? 0 : d.temperature);-->
+<!--            const colors = data.map(d => rowColor(d.temperature));-->
 
 <!--            if (!chart) {-->
 <!--                const ctx = document.getElementById('weatherChart').getContext('2d');-->
@@ -257,7 +206,7 @@
 <!--                        datasets: [{-->
 <!--                            label: 'Temperature (°C)',-->
 <!--                            data: temps,-->
-<!--                            backgroundColor: 'rgba(75, 192, 192, 0.6)'-->
+<!--                            backgroundColor: colors-->
 <!--                        }]-->
 <!--                    },-->
 <!--                    options: {-->
@@ -269,6 +218,7 @@
 <!--                });-->
 <!--            } else {-->
 <!--                chart.data.datasets[0].data = temps;-->
+<!--                chart.data.datasets[0].backgroundColor = colors;-->
 <!--                chart.update();-->
 <!--            }-->
 <!--        }-->
@@ -285,112 +235,146 @@
 <head>
     <title>Weather Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <style>
         body { font-family: Arial, sans-serif; background: #f0f2f5; text-align: center; }
         h1 { color: #333; }
-        table { margin: 0 auto; border-collapse: collapse; width: 80%; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
         th, td { padding: 12px; border: 1px solid #ddd; }
-        th { background-color: #4CAF50; color: white; }
-        tr:hover { background-color: #f1f1f1; }
-        #last-updated { margin-top: 10px; font-style: italic; color: #555; }
-        canvas { margin-top: 30px; }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            transform: scale(1.01);
+        }
+
+        #last-updated {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        canvas {
+            margin-top: 30px;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Weather Dashboard</h1>
 
-    <div id="weather-table">
-        <table>
-            <tr>
-                <th>City</th>
-                <th>Temperature (°C)</th>
-                <th>Description</th>
-            </tr>
-        </table>
-    </div>
+<h1>Weather Dashboard</h1>
 
-    <p id="last-updated">Last updated: <span id="time"></span></p>
+<div id="weather-table">
+<table>
+<tr>
+<th>City</th>
+<th>Temperature (°C)</th>
+<th>Description</th>
+</tr>
+</table>
+</div>
 
-    <canvas id="weatherChart" width="800" height="400"></canvas>
+<p id="last-updated">Last updated: <span id="time"></span></p>
 
-    <script>
-        const table = document.querySelector("#weather-table table");
+<canvas id="weatherChart" width="800" height="400"></canvas>
 
-        function updateTime() {
-            document.getElementById("time").innerText = new Date().toLocaleTimeString();
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
+<script>
 
-        let chart;
+const table = document.querySelector("#weather-table table");
 
-        function tempColor(temp) {
-            // Color scale: cold (blue) to hot (red)
-            if (temp === "N/A") return 'gray';
-            if (temp <= 0) return '#3498db';        // blue
-            if (temp <= 10) return '#5dade2';       // light blue
-            if (temp <= 20) return '#f1c40f';       // yellow
-            if (temp <= 30) return '#e67e22';       // orange
-            return '#e74c3c';                       // red
-        }
+function updateTime() {
+    document.getElementById("time").innerText =
+        new Date().toLocaleTimeString();
+}
 
-        async function fetchWeather() {
-            const response = await fetch('/weather_data');
-            const data = await response.json();
+setInterval(updateTime, 1000);
+updateTime();
 
-            // Update table
-            table.innerHTML = `
-                <tr>
-                    <th>City</th>
-                    <th>Temperature (°C)</th>
-                    <th>Description</th>
-                </tr>
-            `;
-            data.forEach(item => {
-                const row = table.insertRow();
-                row.insertCell(0).innerText = item.city;
+let chart;
 
-                const tempCell = row.insertCell(1);
-                tempCell.innerText = item.temperature;
-                tempCell.style.color = tempColor(item.temperature);
+function rowColor(temp) {
 
-                const descCell = row.insertCell(2);
-                descCell.innerText = item.description;
-            });
+    if (temp === "N/A") return "lightgray";
 
-            // Update chart
-            const labels = data.map(d => d.city);
-            const temps = data.map(d => d.temperature === "N/A" ? 0 : d.temperature);
-            const colors = data.map(d => tempColor(d.temperature));
+    if (temp <= 10) return "cream";     // Cold
+    if (temp <= 25) return "yellow";    // Normal
+    return "lightred";                      // Hot
+}
 
-            if (!chart) {
-                const ctx = document.getElementById('weatherChart').getContext('2d');
-                chart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: 'Temperature (°C)',
-                            data: temps,
-                            backgroundColor: colors
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        scales: {
-                            y: { beginAtZero: true }
-                        }
-                    }
-                });
-            } else {
-                chart.data.datasets[0].data = temps;
-                chart.data.datasets[0].backgroundColor = colors;
-                chart.update();
+async function fetchWeather() {
+
+    const response = await fetch('/weather_data');
+    const data = await response.json();
+
+    table.innerHTML = `
+        <tr>
+            <th>City</th>
+            <th>Temperature (°C)</th>
+            <th>Description</th>
+        </tr>
+    `;
+
+    data.forEach(item => {
+
+        const row = table.insertRow();
+        row.style.backgroundColor = rowColor(item.temperature);
+
+        row.insertCell(0).innerText = item.city;
+        row.insertCell(1).innerText = item.temperature;
+        row.insertCell(2).innerText = item.description;
+
+    });
+
+    const labels = data.map(d => d.city);
+    const temps = data.map(d => d.temperature === "N/A" ? 0 : d.temperature);
+    const colors = data.map(d => rowColor(d.temperature));
+
+    if (!chart) {
+
+        const ctx = document.getElementById('weatherChart').getContext('2d');
+
+        chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Temperature (°C)',
+                    data: temps,
+                    backgroundColor: colors
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                }
             }
-        }
+        });
 
-        fetchWeather(); // initial load
-        setInterval(fetchWeather, 10000); // update every 10 seconds
-    </script>
+    } else {
+
+        chart.data.datasets[0].data = temps;
+        chart.data.datasets[0].backgroundColor = colors;
+        chart.update();
+
+    }
+}
+
+fetchWeather();
+setInterval(fetchWeather, 10000);
+
+</script>
+
 </body>
 </html>
